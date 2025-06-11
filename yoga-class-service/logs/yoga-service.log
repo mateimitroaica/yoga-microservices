@@ -1,0 +1,437 @@
+2025-06-11T09:41:49.982+03:00  INFO 5958 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplicationTests   : Starting YogaClassServiceApplicationTests using Java 23.0.2 with PID 5958 (started by mitroaicamatei in /Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service)
+2025-06-11T09:41:49.983+03:00 DEBUG 5958 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplicationTests   : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11T09:41:49.984+03:00  INFO 5958 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:41:51.377+03:00  INFO 5958 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:41:51.543+03:00  INFO 5958 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 1 JPA repository interface.
+2025-06-11T09:41:51.860+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ec82a4ca-de41-30ce-a7b5-a68d97607e7c
+2025-06-11T09:41:52.285+03:00  INFO 5958 --- [yoga-class-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:41:52.365+03:00  INFO 5958 --- [yoga-class-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T09:41:52.411+03:00  INFO 5958 --- [yoga-class-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:41:52.779+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:41:52.812+03:00  INFO 5958 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T09:41:53.462+03:00  INFO 5958 --- [yoga-class-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e5d40ec
+2025-06-11T09:41:53.465+03:00  INFO 5958 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T09:41:53.518+03:00  WARN 5958 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:41:53.519+03:00  WARN 5958 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-11T09:41:53.538+03:00  INFO 5958 --- [yoga-class-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:41:54.520+03:00  INFO 5958 --- [yoga-class-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:41:54.626+03:00  INFO 5958 --- [yoga-class-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:41:55.137+03:00  WARN 5958 --- [yoga-class-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:41:55.387+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'instructor-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:41:55.457+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'studio-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:41:56.068+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T09:41:56.111+03:00  WARN 5958 --- [yoga-class-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a5b6fcd-52ce-4f51-9361-99cc86159443
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-11T09:41:56.120+03:00  INFO 5958 --- [yoga-class-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-11T09:41:56.198+03:00  WARN 5958 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [GET, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:41:56.202+03:00  WARN 5958 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [POST, /api/yoga-classes] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:41:56.205+03:00  WARN 5958 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [PUT, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:41:56.209+03:00  WARN 5958 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [DELETE, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:41:56.705+03:00  INFO 5958 --- [yoga-class-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:41:56.738+03:00  WARN 5958 --- [yoga-class-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:41:56.820+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:41:56.848+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:41:56.852+03:00  INFO 5958 --- [yoga-class-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:41:56.862+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:41:56.863+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:41:57.260+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:41:57.262+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:41:57.265+03:00  INFO 5958 --- [yoga-class-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:41:57.267+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749624117266 with initial instances count: 6
+2025-06-11T09:41:57.272+03:00  INFO 5958 --- [yoga-class-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application YOGA-CLASS-SERVICE with eureka with status UP
+2025-06-11T09:41:57.273+03:00  INFO 5958 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749624117273, current=UP, previous=STARTING]
+2025-06-11T09:41:57.274+03:00  INFO 5958 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service: registering service...
+2025-06-11T09:41:57.293+03:00  INFO 5958 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplicationTests   : Started YogaClassServiceApplicationTests in 7.748 seconds (process running for 9.076)
+2025-06-11T09:41:57.313+03:00  INFO 5958 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service - registration status: 204
+2025-06-11T09:41:58.067+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application YOGA-CLASS-SERVICE with eureka with status DOWN
+2025-06-11T09:41:58.067+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749624118067, current=DOWN, previous=UP]
+2025-06-11T09:41:58.067+03:00  INFO 5958 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service: registering service...
+2025-06-11T09:41:58.073+03:00  INFO 5958 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service - registration status: 204
+2025-06-11T09:41:58.077+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:41:58.080+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T09:41:58.089+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T09:41:58.089+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T09:42:01.093+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T09:42:01.102+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service - deregister  status: 200
+2025-06-11T09:42:01.102+03:00  INFO 5958 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T09:42:23.309+03:00  INFO 5996 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Starting YogaClassServiceApplication v0.0.1-SNAPSHOT using Java 21 with PID 5996 (/Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service/target/yoga-class-service-0.0.1-SNAPSHOT.jar started by mitroaicamatei in /Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service)
+2025-06-11T09:42:23.311+03:00 DEBUG 5996 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11T09:42:23.312+03:00  INFO 5996 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:42:25.171+03:00  INFO 5996 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:42:25.430+03:00  INFO 5996 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 245 ms. Found 1 JPA repository interface.
+2025-06-11T09:42:25.900+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7eaf1d61-9776-36ea-8706-9bdf52ca8ebd
+2025-06-11T09:42:26.661+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-11T09:42:26.681+03:00  INFO 5996 --- [yoga-class-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:42:26.681+03:00  INFO 5996 --- [yoga-class-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T09:42:26.727+03:00  INFO 5996 --- [yoga-class-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:42:26.728+03:00  INFO 5996 --- [yoga-class-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3361 ms
+2025-06-11T09:42:27.165+03:00 DEBUG 5996 --- [yoga-class-service] [main] o.u.y.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-06-11T09:42:27.414+03:00  INFO 5996 --- [yoga-class-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:42:27.427+03:00  INFO 6005 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Starting YogaClassServiceApplication v0.0.1-SNAPSHOT using Java 21 with PID 6005 (/Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service/target/yoga-class-service-0.0.1-SNAPSHOT.jar started by mitroaicamatei in /Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service)
+2025-06-11T09:42:27.429+03:00 DEBUG 6005 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11T09:42:27.430+03:00  INFO 6005 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:42:27.544+03:00  INFO 5996 --- [yoga-class-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T09:42:27.615+03:00  INFO 5996 --- [yoga-class-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:42:28.138+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:42:28.201+03:00  INFO 5996 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T09:42:28.883+03:00  INFO 5996 --- [yoga-class-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e288c76
+2025-06-11T09:42:28.887+03:00  INFO 5996 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T09:42:29.046+03:00  WARN 5996 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:42:29.050+03:00  WARN 5996 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-11T09:42:29.097+03:00  INFO 5996 --- [yoga-class-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:42:29.767+03:00  INFO 6005 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:42:30.043+03:00  INFO 6005 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263 ms. Found 1 JPA repository interface.
+2025-06-11T09:42:30.323+03:00  INFO 5996 --- [yoga-class-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:42:30.409+03:00  INFO 5996 --- [yoga-class-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:42:30.443+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7eaf1d61-9776-36ea-8706-9bdf52ca8ebd
+2025-06-11T09:42:30.886+03:00  WARN 5996 --- [yoga-class-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:42:31.005+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'instructor-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:42:31.091+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-06-11T09:42:31.115+03:00  INFO 6005 --- [yoga-class-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:42:31.116+03:00  INFO 6005 --- [yoga-class-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T09:42:31.149+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'studio-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:42:31.157+03:00  INFO 6005 --- [yoga-class-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:42:31.158+03:00  INFO 6005 --- [yoga-class-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3653 ms
+2025-06-11T09:42:31.571+03:00 DEBUG 6005 --- [yoga-class-service] [main] o.u.y.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-06-11T09:42:31.801+03:00  INFO 6005 --- [yoga-class-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:42:31.892+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T09:42:31.900+03:00  INFO 6005 --- [yoga-class-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T09:42:31.961+03:00  INFO 6005 --- [yoga-class-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:42:31.966+03:00  WARN 5996 --- [yoga-class-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 401b34e7-3ea3-4fa1-a032-88fa9d6620ea
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-11T09:42:31.987+03:00  INFO 5996 --- [yoga-class-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-11T09:42:32.139+03:00  WARN 5996 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [GET, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:32.144+03:00  WARN 5996 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [POST, /api/yoga-classes] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:32.149+03:00  WARN 5996 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [PUT, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:32.154+03:00  WARN 5996 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [DELETE, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:32.340+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:42:32.381+03:00  INFO 6005 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T09:42:32.672+03:00  INFO 5996 --- [yoga-class-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:42:32.715+03:00  WARN 5996 --- [yoga-class-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:42:32.808+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:42:32.857+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:42:32.864+03:00  INFO 5996 --- [yoga-class-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:42:32.880+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:42:32.880+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:42:32.880+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:42:32.881+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:42:32.881+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:42:32.881+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:42:32.882+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:42:32.919+03:00  INFO 6005 --- [yoga-class-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18bc1064
+2025-06-11T09:42:32.922+03:00  INFO 6005 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T09:42:33.006+03:00  WARN 6005 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:42:33.008+03:00  WARN 6005 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-11T09:42:33.039+03:00  INFO 6005 --- [yoga-class-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:42:33.466+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:42:33.468+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:42:33.471+03:00  INFO 5996 --- [yoga-class-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:42:33.473+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749624153473 with initial instances count: 4
+2025-06-11T09:42:33.480+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application YOGA-CLASS-SERVICE with eureka with status UP
+2025-06-11T09:42:33.481+03:00  INFO 5996 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749624153481, current=UP, previous=STARTING]
+2025-06-11T09:42:33.483+03:00  INFO 5996 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083: registering service...
+2025-06-11T09:42:33.520+03:00  INFO 5996 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-11T09:42:33.522+03:00  INFO 5996 --- [yoga-class-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-11T09:42:33.552+03:00  INFO 5996 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Started YogaClassServiceApplication in 11.04 seconds (process running for 11.855)
+2025-06-11T09:42:33.566+03:00  INFO 5996 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - registration status: 204
+2025-06-11T09:42:33.995+03:00  INFO 6005 --- [yoga-class-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:42:34.066+03:00  INFO 6005 --- [yoga-class-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:42:34.444+03:00  WARN 6005 --- [yoga-class-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:42:34.524+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'instructor-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:42:34.616+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'studio-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:42:35.106+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T09:42:35.152+03:00  WARN 6005 --- [yoga-class-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 512227a6-0ecd-404a-913b-0a31d82ebe58
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-11T09:42:35.164+03:00  INFO 6005 --- [yoga-class-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-11T09:42:35.243+03:00  WARN 6005 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [GET, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:35.247+03:00  WARN 6005 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [POST, /api/yoga-classes] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:35.251+03:00  WARN 6005 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [PUT, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:35.255+03:00  WARN 6005 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [DELETE, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T09:42:35.714+03:00  INFO 6005 --- [yoga-class-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:42:35.745+03:00  WARN 6005 --- [yoga-class-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:42:35.827+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:42:35.860+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:42:35.865+03:00  INFO 6005 --- [yoga-class-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:42:35.880+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:42:35.880+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:42:35.880+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:42:35.881+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:42:35.881+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:42:35.881+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:42:35.881+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:42:36.368+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:42:36.370+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:42:36.373+03:00  INFO 6005 --- [yoga-class-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:42:36.374+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749624156374 with initial instances count: 4
+2025-06-11T09:42:36.379+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application YOGA-CLASS-SERVICE with eureka with status UP
+2025-06-11T09:42:36.381+03:00  INFO 6005 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749624156381, current=UP, previous=STARTING]
+2025-06-11T09:42:36.383+03:00  INFO 6005 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089: registering service...
+2025-06-11T09:42:36.400+03:00  INFO 6005 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-06-11T09:42:36.401+03:00  INFO 6005 --- [yoga-class-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2025-06-11T09:42:36.426+03:00  INFO 6005 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Started YogaClassServiceApplication in 10.134 seconds (process running for 11.195)
+2025-06-11T09:42:36.427+03:00  INFO 6005 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - registration status: 204
+2025-06-11T09:42:53.127+03:00  INFO 6005 --- [yoga-class-service] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T09:42:53.130+03:00  INFO 6005 --- [yoga-class-service] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T09:42:53.134+03:00  INFO 6005 --- [yoga-class-service] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-06-11T09:44:39.870+03:00  INFO 5996 --- [yoga-class-service] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T09:44:39.873+03:00  INFO 5996 --- [yoga-class-service] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T09:44:39.887+03:00  INFO 5996 --- [yoga-class-service] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2025-06-11T09:47:32.889+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:47:35.889+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:52:32.945+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:52:35.949+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:57:32.962+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:57:35.968+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:02:32.986+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:02:35.982+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:07:33.051+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:07:36.017+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:11:22.165+03:00  WARN 5996 --- [yoga-class-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m52s855ms).
+2025-06-11T10:11:26.112+03:00  WARN 6005 --- [yoga-class-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m52s854ms).
+2025-06-11T10:13:55.946+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:13:58.895+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:18:56.014+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:18:58.927+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:23:56.065+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:23:58.963+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:28:56.140+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:28:58.995+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:33:56.166+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:33:59.096+03:00  INFO 6005 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:36:03.510+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application YOGA-CLASS-SERVICE with eureka with status DOWN
+2025-06-11T10:36:03.516+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749627363516, current=DOWN, previous=UP]
+2025-06-11T10:36:03.518+03:00  INFO 6005 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089: registering service...
+2025-06-11T10:36:03.584+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:36:03.605+03:00  INFO 6005 --- [yoga-class-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:36:03.609+03:00  INFO 6005 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - registration status: 204
+2025-06-11T10:36:03.664+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:36:03.711+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:36:03.741+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:36:03.747+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T10:36:06.749+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T10:36:06.803+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - deregister  status: 200
+2025-06-11T10:36:06.804+03:00  INFO 6005 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T10:38:56.198+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:43:56.231+03:00  INFO 5996 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:45:50.466+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application YOGA-CLASS-SERVICE with eureka with status DOWN
+2025-06-11T10:45:50.474+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749627950474, current=DOWN, previous=UP]
+2025-06-11T10:45:50.477+03:00  INFO 5996 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083: registering service...
+2025-06-11T10:45:50.648+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:45:50.649+03:00  INFO 5996 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - registration status: 204
+2025-06-11T10:45:50.709+03:00  INFO 5996 --- [yoga-class-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:45:50.795+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:45:50.841+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:45:50.895+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:45:50.901+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T10:45:53.908+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T10:45:54.010+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - deregister  status: 200
+2025-06-11T10:45:54.012+03:00  INFO 5996 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T10:56:15.618+03:00  INFO 10239 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Starting YogaClassServiceApplication v0.0.1-SNAPSHOT using Java 21 with PID 10239 (/Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service/target/yoga-class-service-0.0.1-SNAPSHOT.jar started by mitroaicamatei in /Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service)
+2025-06-11T10:56:15.622+03:00 DEBUG 10239 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11T10:56:15.623+03:00  INFO 10239 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T10:56:17.286+03:00  INFO 10239 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T10:56:17.505+03:00  INFO 10239 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interface.
+2025-06-11T10:56:17.810+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7eaf1d61-9776-36ea-8706-9bdf52ca8ebd
+2025-06-11T10:56:18.239+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-11T10:56:18.254+03:00  INFO 10239 --- [yoga-class-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T10:56:18.255+03:00  INFO 10239 --- [yoga-class-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T10:56:18.283+03:00  INFO 10239 --- [yoga-class-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T10:56:18.284+03:00  INFO 10239 --- [yoga-class-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2592 ms
+2025-06-11T10:56:18.577+03:00 DEBUG 10239 --- [yoga-class-service] [main] o.u.y.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-06-11T10:56:18.724+03:00  INFO 10239 --- [yoga-class-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T10:56:18.801+03:00  INFO 10239 --- [yoga-class-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T10:56:18.840+03:00  INFO 10239 --- [yoga-class-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T10:56:19.161+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T10:56:19.256+03:00  INFO 10239 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T10:56:19.807+03:00  INFO 10239 --- [yoga-class-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18bc1064
+2025-06-11T10:56:19.811+03:00  INFO 10239 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T10:56:19.968+03:00  WARN 10239 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T10:56:19.970+03:00  WARN 10239 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-11T10:56:19.995+03:00  INFO 10239 --- [yoga-class-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T10:56:21.189+03:00  INFO 10239 --- [yoga-class-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T10:56:21.271+03:00  INFO 10245 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Starting YogaClassServiceApplication v0.0.1-SNAPSHOT using Java 21 with PID 10245 (/Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service/target/yoga-class-service-0.0.1-SNAPSHOT.jar started by mitroaicamatei in /Users/mitroaicamatei/Desktop/yoga-microservices/yoga-class-service)
+2025-06-11T10:56:21.273+03:00 DEBUG 10245 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11T10:56:21.274+03:00  INFO 10245 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T10:56:21.387+03:00  INFO 10239 --- [yoga-class-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:56:21.844+03:00  WARN 10239 --- [yoga-class-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T10:56:21.936+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'instructor-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T10:56:22.047+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'studio-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T10:56:22.779+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T10:56:22.838+03:00  WARN 10239 --- [yoga-class-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7e5baa19-5f71-4c2c-b5f1-eefcd0aa1bcd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-11T10:56:22.858+03:00  INFO 10239 --- [yoga-class-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-11T10:56:22.988+03:00  WARN 10239 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [GET, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:22.994+03:00  WARN 10239 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [POST, /api/yoga-classes] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:22.998+03:00  WARN 10239 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [PUT, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:23.003+03:00  WARN 10239 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [DELETE, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:23.198+03:00  INFO 10245 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T10:56:23.412+03:00  INFO 10245 --- [yoga-class-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interface.
+2025-06-11T10:56:23.540+03:00  INFO 10239 --- [yoga-class-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T10:56:23.588+03:00  WARN 10239 --- [yoga-class-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T10:56:23.689+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T10:56:23.732+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T10:56:23.740+03:00  INFO 10239 --- [yoga-class-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:56:23.757+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T10:56:23.758+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T10:56:23.758+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T10:56:23.758+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T10:56:23.758+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T10:56:23.758+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T10:56:23.762+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T10:56:23.849+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7eaf1d61-9776-36ea-8706-9bdf52ca8ebd
+2025-06-11T10:56:24.419+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T10:56:24.424+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T10:56:24.428+03:00  INFO 10239 --- [yoga-class-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T10:56:24.430+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749628584429 with initial instances count: 3
+2025-06-11T10:56:24.435+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application YOGA-CLASS-SERVICE with eureka with status UP
+2025-06-11T10:56:24.436+03:00  INFO 10239 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749628584436, current=UP, previous=STARTING]
+2025-06-11T10:56:24.439+03:00  INFO 10239 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083: registering service...
+2025-06-11T10:56:24.471+03:00  INFO 10239 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-11T10:56:24.472+03:00  INFO 10239 --- [yoga-class-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-11T10:56:24.503+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-06-11T10:56:24.508+03:00  INFO 10239 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Started YogaClassServiceApplication in 9.69 seconds (process running for 10.52)
+2025-06-11T10:56:24.524+03:00  INFO 10245 --- [yoga-class-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T10:56:24.524+03:00  INFO 10245 --- [yoga-class-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T10:56:24.526+03:00  INFO 10239 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - registration status: 204
+2025-06-11T10:56:24.573+03:00  INFO 10245 --- [yoga-class-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T10:56:24.573+03:00  INFO 10245 --- [yoga-class-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3235 ms
+2025-06-11T10:56:24.913+03:00 DEBUG 10245 --- [yoga-class-service] [main] o.u.y.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-06-11T10:56:25.078+03:00  INFO 10245 --- [yoga-class-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T10:56:25.149+03:00  INFO 10245 --- [yoga-class-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T10:56:25.191+03:00  INFO 10245 --- [yoga-class-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T10:56:25.472+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T10:56:25.503+03:00  INFO 10245 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T10:56:25.940+03:00  INFO 10245 --- [yoga-class-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18bc1064
+2025-06-11T10:56:25.942+03:00  INFO 10245 --- [yoga-class-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T10:56:26.024+03:00  WARN 10245 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T10:56:26.025+03:00  WARN 10245 --- [yoga-class-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-11T10:56:26.049+03:00  INFO 10245 --- [yoga-class-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T10:56:26.998+03:00  INFO 10245 --- [yoga-class-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T10:56:27.063+03:00  INFO 10245 --- [yoga-class-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:56:27.395+03:00  WARN 10245 --- [yoga-class-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T10:56:27.469+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'instructor-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T10:56:27.540+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'studio-service' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T10:56:27.942+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T10:56:27.975+03:00  WARN 10245 --- [yoga-class-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: abef949a-468c-402e-b087-f1e229510450
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-11T10:56:27.984+03:00  INFO 10245 --- [yoga-class-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-11T10:56:28.052+03:00  WARN 10245 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [GET, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:28.055+03:00  WARN 10245 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [POST, /api/yoga-classes] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:28.059+03:00  WARN 10245 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [PUT, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:28.068+03:00  WARN 10245 --- [yoga-class-service] [main] thorizationManagerRequestMatcherRegistry : One of the patterns in [DELETE, /api/yoga-classes/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-06-11T10:56:28.505+03:00  INFO 10245 --- [yoga-class-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T10:56:28.533+03:00  WARN 10245 --- [yoga-class-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T10:56:28.612+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T10:56:28.638+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T10:56:28.643+03:00  INFO 10245 --- [yoga-class-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:56:28.656+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T10:56:28.656+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T10:56:28.656+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T10:56:28.656+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T10:56:28.657+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T10:56:28.657+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T10:56:28.657+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T10:56:29.031+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T10:56:29.033+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T10:56:29.035+03:00  INFO 10245 --- [yoga-class-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T10:56:29.037+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749628589036 with initial instances count: 3
+2025-06-11T10:56:29.042+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application YOGA-CLASS-SERVICE with eureka with status UP
+2025-06-11T10:56:29.043+03:00  INFO 10245 --- [yoga-class-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749628589043, current=UP, previous=STARTING]
+2025-06-11T10:56:29.045+03:00  INFO 10245 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089: registering service...
+2025-06-11T10:56:29.063+03:00  INFO 10245 --- [yoga-class-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-06-11T10:56:29.064+03:00  INFO 10245 --- [yoga-class-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2025-06-11T10:56:29.090+03:00  INFO 10245 --- [yoga-class-service] [main] o.u.y.YogaClassServiceApplication        : Started YogaClassServiceApplication in 8.892 seconds (process running for 9.68)
+2025-06-11T10:56:29.097+03:00  INFO 10245 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - registration status: 204
+2025-06-11T10:57:23.118+03:00  INFO 10239 --- [yoga-class-service] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T10:57:23.132+03:00  INFO 10239 --- [yoga-class-service] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T10:57:23.155+03:00  INFO 10239 --- [yoga-class-service] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2025-06-11T10:57:24.897+03:00  INFO 10245 --- [yoga-class-service] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T10:57:24.901+03:00  INFO 10245 --- [yoga-class-service] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T10:57:24.922+03:00  INFO 10245 --- [yoga-class-service] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2025-06-11T10:58:08.978+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application YOGA-CLASS-SERVICE with eureka with status DOWN
+2025-06-11T10:58:08.983+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749628688983, current=DOWN, previous=UP]
+2025-06-11T10:58:08.985+03:00  INFO 10245 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089: registering service...
+2025-06-11T10:58:09.013+03:00  INFO 10245 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - registration status: 204
+2025-06-11T10:58:09.018+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:58:09.032+03:00  INFO 10245 --- [yoga-class-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:58:09.073+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:58:09.091+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:58:09.112+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:58:09.116+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T10:58:12.122+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T10:58:12.136+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8089 - deregister  status: 200
+2025-06-11T10:58:12.138+03:00  INFO 10245 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T11:01:23.801+03:00  INFO 10239 --- [yoga-class-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:03:09.662+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application YOGA-CLASS-SERVICE with eureka with status DOWN
+2025-06-11T11:03:09.670+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749628989670, current=DOWN, previous=UP]
+2025-06-11T11:03:09.673+03:00  INFO 10239 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083: registering service...
+2025-06-11T11:03:09.724+03:00  INFO 10239 --- [yoga-class-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - registration status: 204
+2025-06-11T11:03:09.779+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T11:03:09.804+03:00  INFO 10239 --- [yoga-class-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T11:03:09.916+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T11:03:09.956+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T11:03:10.008+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T11:03:10.015+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T11:03:13.019+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T11:03:13.042+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_YOGA-CLASS-SERVICE/192.168.0.92:yoga-class-service:8083 - deregister  status: 200
+2025-06-11T11:03:13.044+03:00  INFO 10239 --- [yoga-class-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

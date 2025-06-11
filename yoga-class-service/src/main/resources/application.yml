@@ -1,0 +1,49 @@
+#server:
+#  port: 8083
+
+spring:
+  application:
+    name: yoga-class-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3356/yoga_class_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+info:
+  app:
+    name: Yoga Class Service
+    description: A microservice managing yoga classes
+    version: 1.0.0
+
+logging:
+  level:
+    root: INFO
+    org.unibuc.yogaclassservice: DEBUG
+  file:
+    name: logs/yoga-service.log
